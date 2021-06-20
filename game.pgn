@@ -1,0 +1,32 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2021.06.20"]
+[Round "-"]
+[White "ColbyCado"]
+[Black "svenskithesource"]
+[Result "0-1"]
+[CurrentPosition "3r1k1r/p1p2ppp/2p1Q3/1p6/4P3/2PP4/P1P2PPP/R3K2R w KQ -"]
+[Timezone "UTC"]
+[ECO "C42"]
+[ECOUrl "https://www.chess.com/openings/Petrovs-Defense-Classical-Stafford-Gambit"]
+[UTCDate "2021.06.20"]
+[UTCTime "07:33:34"]
+[WhiteElo "353"]
+[BlackElo "303"]
+[TimeControl "180+2"]
+[Termination "svenskithesource won on time"]
+[StartTime "07:33:34"]
+[EndDate "2021.06.20"]
+[EndTime "07:38:42"]
+[Link "https://www.chess.com/game/live/17913132563"]
+
+1. e4 {[%clk 0:02:58.1]} 1... e5 {[%clk 0:03:01]} 2. Nf3 {[%clk 0:02:58.6]} 2...
+Nf6 {[%clk 0:03:02]} 3. Nxe5 {[%clk 0:02:59.5]} 3... Nc6 {[%clk 0:03:01.2]} 4.
+Nxc6 {[%clk 0:02:57.9]} 4... dxc6 {[%clk 0:03:01]} 5. d3 {[%clk 0:02:56.5]} 5...
+b5 {[%clk 0:02:46.9]} 6. Nc3 {[%clk 0:02:51.2]} 6... Bc5 {[%clk 0:02:38.2]} 7.
+Be3 {[%clk 0:02:42.3]} 7... Bg4 {[%clk 0:02:32.8]} 8. Be2 {[%clk 0:02:38.9]}
+8... Qd4 {[%clk 0:02:04.3]} 9. Bxd4 {[%clk 0:02:38.4]} 9... Bxd4 {[%clk
+0:02:05.3]} 10. Bxg4 {[%clk 0:02:36.4]} 10... Nxg4 {[%clk 0:02:02.1]} 11. Qxg4
+{[%clk 0:00:02.4]} 11... Bxc3+ {[%clk 0:01:57.7]} 12. bxc3 {[%clk 0:00:02.8]}
+12... Rd8 {[%clk 0:01:52.2]} 13. Qe6+ {[%clk 0:00:02.3]} 13... Kf8 {[%clk
+0:01:50.7]} 0-1
