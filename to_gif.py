@@ -44,7 +44,31 @@ def get_image(board: chess.Board):
 
 
 def main():
-    pgn = open("game.pgn")
+    parser = argparse.ArgumentParser(description="Turn your chess game into a gif!")
+    parser.add_argument(
+        "-f", "--file", required=True, type=str, help="Filepath to the PGN file."
+    )
+    parser.add_argument(
+        "-o", "--output", type=str, help="Output path for the gif. Default is game.gif"
+    )
+    parser.add_argument(
+        "-d",
+        "--delay",
+        type=int,
+        help="The delay between each move (in seconds). Default is 1 second",
+    )
+    parser.set_defaults(delay=1, output="game.gif")
+
+    args = parser.parse_args()
+
+    delay = args.delay
+    file = args.file
+    output = args.output
+    if not os.path.exists(file):
+        print("PGN file doesn't exist.")
+        exit()
+
+    pgn = open(file)
 
     game = chess.pgn.read_game(pgn)
     board = game.board()
@@ -53,7 +77,12 @@ def main():
     for move in game.mainline_moves():
         board.push(move)
         board_images.append(get_image(board))
-    gif.save("game.gif", save_all=True, append_images=board_images, duration=1000)
+    gif.save(
+        output,
+        save_all=True,
+        append_images=board_images,
+        duration=delay * 1000,  # because duration is in milliseconds
+    )
 
 
 if __name__ == "__main__":
